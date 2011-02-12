@@ -14,13 +14,13 @@
 	public void function view(any rc){
 		var opportunity = new model.opportunity();
 		//create a new object
-//		var id = rc.id;
+		var id = rc.id;
 		//set the id from rc.id
-
+		opportunity.setopportunityId(id);
 		//pass the object to the service (in service call orm load)
-		
+		opportunityService.get(opportunity);
 		//set the rc.opportunity to the object
-//		writedump(opportunity);
-//		abort;
+	
+		rc.opportunity = opportunity;
 	}
 }

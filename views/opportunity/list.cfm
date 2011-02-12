@@ -18,13 +18,13 @@
 	<cfoutput>
 	<cfloop from="1" to=#ArrayLen(opportunities)# index="i">
 	<tr>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getlongname()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getshortname()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getduration()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getdescription()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getopendate()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getclosedate()#</a></td>
-		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getnumberneeded()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#opportunities[i].getlongname()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#opportunities[i].getshortname()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#opportunities[i].getduration()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#opportunities[i].getdescription()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#dateformat(opportunities[i].getopendate(),"mm/dd/yyyy")#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#dateformat(opportunities[i].getclosedate(),"mm/dd/yyyy")#</a></td>
+		<td><a href="index.cfm?action=opportunity.view&id=#opportunities[i].getopportunityId()#">#opportunities[i].getnumberneeded()#</a></td>
 	</tr>
 	</cfloop>
 	</cfoutput>
