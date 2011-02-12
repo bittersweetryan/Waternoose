@@ -1,5 +1,9 @@
 ﻿component{
-	public void function addopportunity(any rc){
-		rc.opportunity = new model.opportunity();
+	public void function new(any rc){
+		rc.org = new model.org();
+	}
+	
+	public void function view(any rc){
+		rc.org = new model.org();
 	}
 }
