@@ -6,7 +6,7 @@
 	</tr>
 	<cfloop from="1" to=#ArrayLen(opportunities)# index="i">
 	<tr>
-		<td>#opportunities[i].id#</td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].id#"></a></td>
 	</tr>
 	</cfloop>
 </table>
