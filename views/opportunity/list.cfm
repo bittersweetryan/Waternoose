@@ -1,4 +1,10 @@
-?<cfdump var='#rc.opportunities#'>
+    <h3 class='heading ui-corner-top' >
+      <div>
+        Opportunties
+      </div>
+    </h3>
+    <div>
+<cfdump var='#rc.opportunities#'>
 <cfset opportunities = rc.opportunities>
 <table>
 	<tr>
@@ -16,3 +22,4 @@
 	</tr>
 	</cfloop>
 </table>
+</div>

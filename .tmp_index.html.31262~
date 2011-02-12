@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>Waternoose</title>
+  <link href='./css/960.css' rel='stylesheet' type='text/css' />
+  <link href='./css/jquery-ui-1.8.9.custom.css' rel='stylesheet' type='text/css' />
+  <link href='./css/style.css' rel='stylesheet' type='text/css' />
+  <script type='text/javascript' src='./js/jquery-1.5.min.js'></script>
+  <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
+<script type='text/javascript'>
+  jQuery(document).ready(function(){
+      $( "#accordion" ).accordion({
+          autoHeight: false
+      });
+  });
+</script>
+  
+</head>
+
+<body>
+  <div class='container_16' style='background-color: #592A25;'>
+    <div class='header grid_16'>
+      <div class='alpha grid_4 logo'>
+        main logo here
+      </div>
+      <div class='grid_3'> &nbsp;</div>
+      <div class='grid_8 searchContainer ui-corner-all'>
+        <div class='alpha grid_4 search'>
+          Search: <input name='searchFor' />
+        </div>
+        <div class='omega grid_4 login'>
+          Username: <input name='username' /><br />
+          Password: <input name='password' /><br />
+          Login
+          Create Account
+        </div>
+      </div>
+      <div class='grid_1 alpha'> &nbsp;</div>
+    </div>
+    <div class='alpha grid_4 leftMenu'>
+      <div id="accordion">
+        <h3><a href="#">Organizations</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Volunteers</a></h3>
+        <div>
+           <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Section 3</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Section 4</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <br class='clear' />
+      <div class='wordCloud'>
+        <div style='margin-top: -30px; margin-bottom: 30px; font-size: 18px; font-weight: bold; color: black;'>Popular Opportunities</div>
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
+        
+      </div>
+    </div>
+    <div id='main' class='grid_12 omega contentPane'>
+    
+    
+    
+    <h3 class='heading ui-corner-top' >
+      Organizations
+    </h3>
+    <div>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut 
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+      vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+      iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+      duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum. Typi non habent claritatem insitam; est usus legentis in iis
+      qui facit eorum claritatem. Investigationes demonstraverunt lectores
+      legere me lius quod ii legunt saepius. Claritas est etiam processus
+      dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
+      quam littera gothica, quam nunc putamus parum claram, anteposuerit
+      litterarum formas humanitatis per seacula quarta decima et quinta decima.
+      Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
+      futurum.
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    <br class='clear' />
+    <div class='footer grid_16'>footer</div>
+  </div>
+  
+</body>
+
+
+</html>

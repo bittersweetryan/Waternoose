@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
@@ -6,9 +6,8 @@
   <link href='./css/960.css' rel='stylesheet' type='text/css' />
   <link href='./css/jquery-ui-1.8.9.custom.css' rel='stylesheet' type='text/css' />
   <link href='./css/style.css' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
   <script type='text/javascript' src='./js/jquery-1.5.min.js'></script>
-  <script type='text/javascript' src='./js/jquery.validate.min.js'></script>
   <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
 <script type='text/javascript'>
   jQuery(document).ready(function(){
@@ -62,7 +61,7 @@
         <div class='omega grid_4 login'>
           <label for='username'>Username:</label><input id='username' /><br />
           <label for='password'>Password:</label><input id='password' /><br />
-          <button id="login" class="ui-widget ui-state-default ui-corner-all ui-button-text-only">
+          <button id="login" class="ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
             <span class="ui-button-text">Login</span>
           </button>
         </div>
@@ -77,27 +76,18 @@
             <li><a href='index.cfm?action=opportunity.list'>My Account</a></li>
             <li><a href='index.cfm?action=opportunity.list'>My Opportunities</a></li>
             <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
-            <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
+            <li><a href='index.cfm?action=opportunity.add'>Add Opportunities</a></li>
           </ul>
         </div>
         <h3><a href="#">Organizations</a></h3>
         <div>
           <ul>
-            <li><a href='index.cfm?action=org.addopportunity'>Add Opportunity</a></li>
             <li><a href='index.cfm?action=opportunity.list'>Volunteering</a></li>
             <li><a href='index.cfm?action=opportunity.list'>Opportunities</a></li>
             <li><a href='index.cfm?action=opportunity.list'>Link</a></li>
           </ul>
         </div>
-        <h3><a href="#">View Opportunities</a></h3>
-        <div>
-          <ul>
-            <li><a href='#'>By Category</a></li>
-            <li><a href='#'>By Date</a></li>
-            <li><a href='#'>By Something Cool</a></li>
-          </ul>
-        </div>
-        <h3><a href="#">Blah</a></h3>
+        <h3><a href="#">Section 3</a></h3>
         <div>
           <ul>
             <li><a href='#'>Link</a></li>
@@ -105,11 +95,18 @@
             <li><a href='#'>Link</a></li>
           </ul>
         </div>
-        
+        <h3><a href="#">Section 4</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
       </div>
       <br class='clear' />
       <div class='wordCloud'>
-        <div class='heading'><div>Popular Opportunities</div></div>
+        <div class='heading'>Popular Opportunities</div>
         <h1>Lorem</h1>
         <h4>ipsum</h4>
         <h2>dolor</h2>
@@ -129,9 +126,34 @@
     </div>
     <div id='main' class='grid_12 omega contentPane'>
     
-    <cfoutput>
-		#body#
-	</cfoutput>   
+    
+    
+    <h3 class='heading ui-corner-top' >
+      Organizations
+    </h3>
+    <div>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut 
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+      vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+      iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+      duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum. Typi non habent claritatem insitam; est usus legentis in iis
+      qui facit eorum claritatem. Investigationes demonstraverunt lectores
+      legere me lius quod ii legunt saepius. Claritas est etiam processus
+      dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
+      quam littera gothica, quam nunc putamus parum claram, anteposuerit
+      litterarum formas humanitatis per seacula quarta decima et quinta decima.
+      Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
+      futurum.
+    </div>
+    
+    
+    
+    
     
     </div>
     <br class='clear' />
