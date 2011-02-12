@@ -1,5 +1,4 @@
-﻿
-<div id="newListings" class="">
+﻿<div id="newListings" class="">
 	<p>New Listings</p>
 	<ul>
 		<li><a href="index.cfm?action=listing.view&listingId=1">Listing 1</a></li>
