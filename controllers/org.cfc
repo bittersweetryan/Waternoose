@@ -22,6 +22,15 @@
 		
 		var opportunity = new model.opportunity();
 		
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		opportunity.setlongname(rc.longname);
+		
 		writedump(opportunity);
 		writedump(rc);
 		abort;
