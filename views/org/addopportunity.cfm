@@ -20,9 +20,9 @@
 		<li><label for="duration">Opportunity Duration</label> 
 		<input type="text" class="required"  name="duration" value="#opportunity.getduration()#"></li>
 		<li><label for="opendate">Open Date</label> 
-		<input type="text" class="required date"  name="opendate" value="#opportunity.getopendate()#"></li>
+		<input type="text" class="required date datepicker"  name="opendate" value="#opportunity.getopendate()#"></li>
 		<li><label for="closedate">Close Date</label> 
-		<input type="text" class="required date"  name="closedate" value="#opportunity.getclosedate()#"></li>
+		<input type="text" class="required date datepicker"  name="closedate" value="#opportunity.getclosedate()#"></li>
 		<li><label for="numberneeded">Number of Volunteers Needed</label> 
 		<input type="text" class="required number"  name="numberneeded" value="#opportunity.getnumberneeded()#"></li>
 	</ul>
