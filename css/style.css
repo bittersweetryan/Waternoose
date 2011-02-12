@@ -30,7 +30,11 @@ body { background: #f2f2f2; color: #85A0A6; }
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.heading div {  margin: 8px 0px;  padding: 0px; background: transparent;  }
 
 input { -moz-border-radius: 3px; -moz-background-clip:padding!important; }
+label { padding-right: 5px; }
 h1.logo { font-family: 'Rock Salt', arial, serif;  font-size: 48px; margin-top: 0;}
-a:hover { color: #85A0A6; }
+div.ui-accordion-content a {  font-size: 16px; }
+a:hover { color: #85A0A6;  }
+
