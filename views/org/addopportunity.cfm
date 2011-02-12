@@ -24,7 +24,7 @@
 		<li><label for="closedate">Close Date</label> 
 		<input type="text" class="required date"  name="closedate" value="#opportunity.getclosedate()#"></li>
 		<li><label for="numberneeded">Number of Volunteers Needed</label> 
-		<input type="text" class="required"  name="numberneeded" value="#opportunity.getnumberneeded()#"></li>
+		<input type="text" class="required number"  name="numberneeded" value="#opportunity.getnumberneeded()#"></li>
 	</ul>
 	
 	<input type="submit" value="Submit">
