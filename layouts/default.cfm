@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<cfoutput>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -24,28 +25,16 @@
 </head>
 <body>
 	<div id="header-container">
-		<header class="wrapper">
-			<h1 id="title">Waternoose</h1>
-			<nav>
-			  <div id='search'>
-			    <input name='searchFor' />
-        </div>
-				<ul>
-					<li><a href="#">Some</a></li>
-					<li><a href="#">navigation</a></li>
-					<li><a href="#">links</a></li>
-				</ul>
-			</nav>
-		</header>
+		#view('header')#
 	</div>
 	<div id="main" class="wrapper">
-		<cfoutput>
+
 		#body#
-		</cfoutput>
+		
 	</div>
 	<div id="footer-container">
 		<footer class="wrapper">
-			<h3>A nice footer</h3>
+			#view('footer')#
 		</footer>
 	</div>
 
@@ -58,3 +47,4 @@
 	<![endif]-->
 </body>
 </html>
+</cfoutput>
