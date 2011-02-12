@@ -5,14 +5,25 @@ body { background: #f2f2f2; color: #85A0A6; }
 .header .login { text-align: left; }
 .header .login input { width: 120px; }
 
-.leftMenu { margin: 0px 0px 0px 10px; border: 1px solid black; height: 100%; }
+.leftMenu { background-color: #8C3027; margin: 0px 0px 0px 10px; padding-bottom: 21px; height: 100%; }
 #accordion { height: 300px; }
 #accordion ul { padding: 0px; margin: 0px; list-style: none; }
 
 .wordCloud { margin-top: 20px;  }
 .wordCloud h1,.wordCloud h2,.wordCloud h3,.wordCloud h4,.wordCloud h5 { margin: 0px; width: auto; float: left; }
 
-.contentPane { margin: 0px; padding: 10px; border: 1px solid black; height: 100%; }
-
-.footer { height: 40px; border: 1px solid black; text-align: center; }
+.contentPane { min-height: 515px; margin: 0px; padding: 0px 10px 0px 10px; height: 100%; background-color: #592A25; }
+.contentPane div { background-color: #8C3027; padding: 20px; }
+.footer { height: 40px; margin: 0px; padding: 10px; text-align: center; background-color: #592A25; }
 .clear { clear: both; }
+
+
+.heading {
+  background: url("../images/ui-bg_glass_20_8c3027_1x400.png") repeat-x scroll 50% 50% #8C3027;
+  color: #FFFFFF;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

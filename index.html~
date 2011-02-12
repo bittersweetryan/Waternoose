@@ -19,13 +19,13 @@
 </head>
 
 <body>
-  <div class='container_16'>
+  <div class='container_16' style='background-color: #592A25;'>
     <div class='header grid_16'>
       <div class='alpha grid_4 logo'>
         main logo here
       </div>
       <div class='grid_3'> &nbsp;</div>
-      <div class='grid_8 searchContainer'>
+      <div class='grid_8 searchContainer ui-corner-all'>
         <div class='alpha grid_4 search'>
           Search: <input name='searchFor' />
         </div>
@@ -75,7 +75,7 @@
       </div>
       <br class='clear' />
       <div class='wordCloud'>
-        <div class='heading' style='margin-top: -30px; margin-bottom: 30px; font-size: 18px; font-weight: bold; color: black;'>Popular Opportunities</div>
+        <div style='margin-top: -30px; margin-bottom: 30px; font-size: 18px; font-weight: bold; color: black;'>Popular Opportunities</div>
         <h1>Lorem</h1>
         <h4>ipsum</h4>
         <h2>dolor</h2>
@@ -90,9 +90,41 @@
         <h4>amet</h4>
         <h3>consectetuer</h3>
         <h5>adipiscing</h5>
+        
       </div>
     </div>
-    <div id='main' class='grid_12 omega contentPane'>Content Pane</div>
+    <div id='main' class='grid_12 omega contentPane'>
+    
+    
+    
+    <h3 class='heading ui-corner-top' >
+      Organizations
+    </h3>
+    <div>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut 
+      wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+      iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+      vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+      iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+      duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+      eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+      possim assum. Typi non habent claritatem insitam; est usus legentis in iis
+      qui facit eorum claritatem. Investigationes demonstraverunt lectores
+      legere me lius quod ii legunt saepius. Claritas est etiam processus
+      dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare
+      quam littera gothica, quam nunc putamus parum claram, anteposuerit
+      litterarum formas humanitatis per seacula quarta decima et quinta decima.
+      Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
+      futurum.
+    </div>
+    
+    
+    
+    
+    
+    </div>
     <br class='clear' />
     <div class='footer grid_16'>footer</div>
   </div>
