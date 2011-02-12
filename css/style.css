@@ -1,0 +1,10 @@
+body { background: #f2f2f2; }
+.header { height: 100px; border: 1px solid black; }
+.header .searchContainer { position: relative; text-align: right; padding-top: 14px;}
+.header .search {  }
+.header .login {  }
+
+.leftMenu { margin: 0px 0px 0px 10px; border: 1px solid black; }
+.contentPane { margin: 0px; padding: 10px; border: 1px solid black; }
+
+.clear { clear: both; }
