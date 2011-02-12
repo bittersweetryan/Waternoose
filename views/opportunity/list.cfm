@@ -4,22 +4,29 @@
       </div>
     </h3>
     <div>
-<cfdump var='#rc.opportunities#'>
 <cfset opportunities = rc.opportunities>
 <table>
 	<tr>
-		<th></th>
+		<th>Name</th>
+		<th>Short Name</th>
+		<th>Description</th>
+		<th>Duration</th>
+		<th>Open Date</th>
+		<th>Close Date</th>
+		<th>Number of Volunteers Needed</td>
 	</tr>
+	<cfoutput>
 	<cfloop from="1" to=#ArrayLen(opportunities)# index="i">
 	<tr>
-		<td><label>Name</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].longname#"></a></td>
-		<td><label>Short Name</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].shortname#"></a></td>
-		<td><label>Description</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].description#"></a></td>
-		<td><label>Duration</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].duration#"></a></td>
-		<td><label>Open Date</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].opendate#"></a></td>
-		<td><label>Close Date</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].closedate#"></a></td>
-		<td><label>Number of Volunteers Needed</label><a href="index.cfm?action=opportunity.view?id=#opportunities[i].numberneeded#"></a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getlongname()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getshortname()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getduration()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getdescription()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getopendate()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getclosedate()#</a></td>
+		<td><a href="index.cfm?action=opportunity.view?id=#opportunities[i].getopportunityId()#">#opportunities[i].getnumberneeded()#</a></td>
 	</tr>
 	</cfloop>
+	</cfoutput>
 </table>
 </div>

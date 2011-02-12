@@ -1,5 +1,6 @@
 ﻿component{
 	variables.fw = StructNew();
+	variables.opportunityService = new service.opportunityService();
 	
 	public void function init(any fw){
 		variables.fw = arguments.fw;
@@ -20,19 +21,19 @@
 	
 	public void function saveopportunity(any rc){
 		
-		var opportunity = new model.opportunity();
+		var opportunity = EntityNew("opportunity");
 		
 		opportunity.setlongname(rc.longname);
+		opportunity.setshortname(rc.shortname);
+		opportunity.setdescription(rc.description);
+		opportunity.setduration(rc.duration);
 		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
-		opportunity.setlongname(rc.longname);
+		opportunity.setopendate(rc.opendate);
+		opportunity.setclosedate(rc.closedate);
+		opportunity.setnumberneeded(rc.numberneeded);
 		
-		writedump(opportunity);
-		writedump(rc);
-		abort;
+		variables.opportunityService.add(opportunity);
+		
+		variables.fw.redirect("opportunity.list");
 	}
 }

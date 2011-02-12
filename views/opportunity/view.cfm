@@ -1,6 +1,6 @@
 ﻿    <h3 class='heading ui-corner-top' >
       <div>
-        New Account
+        View Opportunity
       </div>
     </h3>
     <div>
