@@ -4,8 +4,6 @@
 <input type="text"  name="longname"></li>
 <li><label for="shortname">Short Name</label> 
 <input type="text"  name="shortname"></li>
-<li><label for="contact">Short Name</label> 
-<input type="text"  name="shortname"></li>
 <li><label for="address1">Address 1</label>
 <input type="text" name="address1"></li>
 <li><label for="address2">Address 2</label>
