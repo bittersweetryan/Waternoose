@@ -6,7 +6,7 @@
   <link href='./css/960.css' rel='stylesheet' type='text/css' />
   <link href='./css/jquery-ui-1.8.9.custom.css' rel='stylesheet' type='text/css' />
   <link href='./css/style.css' rel='stylesheet' type='text/css' />
-  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css' />
   <script type='text/javascript' src='./js/jquery-1.5.min.js'></script>
   <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
 <script type='text/javascript'>
@@ -61,7 +61,7 @@
         <div class='omega grid_4 login'>
           <label for='username'>Username:</label><input id='username' /><br />
           <label for='password'>Password:</label><input id='password' /><br />
-          <button id="login" class="ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
+          <button id="login" class="ui-widget ui-state-default ui-corner-all ui-button-text-only">
             <span class="ui-button-text">Login</span>
           </button>
         </div>
@@ -76,7 +76,7 @@
             <li><a href='index.cfm?action=opportunity.list'>My Account</a></li>
             <li><a href='index.cfm?action=opportunity.list'>My Opportunities</a></li>
             <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
-            <li><a href='index.cfm?action=opportunity.add'>Add Opportunities</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
           </ul>
         </div>
         <h3><a href="#">Organizations</a></h3>
@@ -106,7 +106,7 @@
       </div>
       <br class='clear' />
       <div class='wordCloud'>
-        <div class='heading'>Popular Opportunities</div>
+        <div class='heading'><div>Popular Opportunities</div></div>
         <h1>Lorem</h1>
         <h4>ipsum</h4>
         <h2>dolor</h2>
@@ -129,7 +129,9 @@
     
     
     <h3 class='heading ui-corner-top' >
-      Organizations
+      <div>
+        Organizations
+      </div>
     </h3>
     <div>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
