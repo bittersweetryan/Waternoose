@@ -21,6 +21,7 @@ body { background: #f2f2f2; color: #85A0A6; }
 
 .heading {
   background: url("../images/ui-bg_inset-soft_30_592a25_1x100.png") repeat-x scroll 50% 50% #8C3027;
+  font-family: Segoe UI,Arial,sans-serif;
   border: 1px solid #666666;
   color: #FFFFFF;
   font-weight: bold;
@@ -32,3 +33,4 @@ body { background: #f2f2f2; color: #85A0A6; }
 
 input { -moz-border-radius: 3px; -moz-background-clip:padding!important; }
 h1.logo { font-family: 'Rock Salt', arial, serif;  font-size: 48px; margin-top: 0;}
+a:hover { color: #85A0A6; }
