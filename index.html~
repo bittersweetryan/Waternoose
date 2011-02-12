@@ -1,64 +1,103 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]--><head>
-	<meta charset="UTF-8">
-	
-	<title>Your website name</title>
-	
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	
-	<link rel="stylesheet" href="css/style.css?v=2">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+  <title>Waternoose</title>
+  <link href='./css/960.css' rel='stylesheet' type='text/css' />
+  <link href='./css/jquery-ui-1.8.9.custom.css' rel='stylesheet' type='text/css' />
+  <link href='./css/style.css' rel='stylesheet' type='text/css' />
+  <script type='text/javascript' src='./js/jquery-1.5.min.js'></script>
+  <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
+<script type='text/javascript'>
+  jQuery(document).ready(function(){
+      $( "#accordion" ).accordion({
+          autoHeight: false
+      });
+  });
+</script>
+  
+</head>
 
-	<script src="js/libs/modernizr-1.6.min.js"></script></head>
 <body>
-<p class="info">Your HTML5 project is almost ready! Please check the <a href="TODO.txt">TODO list</a>.</p>
-	<div id="header-container">
-		<header class="wrapper">
-			<h1 id="title">Your title</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Some</a></li>
-					<li><a href="#">navigation</a></li>
-					<li><a href="#">links</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
-	<div id="main" class="wrapper">
-		<aside>
-			<h3>Something aside</h3>
-		</aside>
-		<article>
-			<header>
-				<h2>Your article heading</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra. Pellentesque auctor neque quis nisl lacinia id rutrum lacus venenatis.</p>
-			</header>
-			<h3>A smaller heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra. Pellentesque auctor neque quis nisl lacinia id rutrum lacus venenatis.</p>	
-			<h3>A smaller heading</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra. Pellentesque auctor neque quis nisl lacinia id rutrum lacus venenatis.</p>
-			<footer>
-			<h3>About the author</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-			</footer>	
-		</article>
-	</div>
-	<div id="footer-container">
-		<footer class="wrapper">
-			<h3>A nice footer</h3>
-		</footer>
-	</div>
-	<p id="jquery-test" href="#" class="info">jQuery is not loaded</p>
+  <div class='container_16'>
+    <div class='header grid_16'>
+      <div class='alpha grid_4 logo'>
+        main logo here
+      </div>
+      <div class='grid_3'> &nbsp;</div>
+      <div class='grid_8 searchContainer'>
+        <div class='alpha grid_4 search'>
+          Search: <input name='searchFor' />
+        </div>
+        <div class='omega grid_4 login'>
+          Username: <input name='username' /><br />
+          Password: <input name='password' /><br />
+          Login
+          Create Account
+        </div>
+      </div>
+      <div class='grid_1 alpha'> &nbsp;</div>
+    </div>
+    <div class='alpha grid_4 leftMenu'>
+      <div id="accordion">
+        <h3><a href="#">Organizations</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Volunteers</a></h3>
+        <div>
+           <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Section 3</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Section 4</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+            <li><a href='#'>Link</a></li>
+          </ul>
+        </div>
+      </div>
+      <br class='clear' />
+      <div class='wordCloud'>
+        <div class='heading' style='margin-top: -30px; margin-bottom: 30px; font-size: 18px; font-weight: bold; color: black;'>Popular Opportunities</div>
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
+      </div>
+    </div>
+    <div id='main' class='grid_12 omega contentPane'>Content Pane</div>
+    <br class='clear' />
+    <div class='footer grid_16'>footer</div>
+  </div>
+  
+</body>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script>	<script src="js/script.js"></script>	<!--[if lt IE 7 ]>
-	<script src="js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
-	<![endif]--></body>
+
 </html>
