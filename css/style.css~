@@ -36,5 +36,6 @@ input { -moz-border-radius: 3px; -moz-background-clip:padding!important; }
 label { padding-right: 5px; }
 h1.logo { font-family: 'Rock Salt', arial, serif;  font-size: 48px; margin-top: 0;}
 div.ui-accordion-content a {  font-size: 16px; }
+label.error{ color: red; margin-left: 5px; }
 a:hover { color: #85A0A6;  }
 
