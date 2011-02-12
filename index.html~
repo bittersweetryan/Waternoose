@@ -43,6 +43,13 @@
       $( "#accordion" ).accordion({
           autoHeight: false
       });
+      
+      $( ".datepicker" ).datepicker();
+      $("form").validate();
+
+          
+      }
+      
   });
 </script>
   
