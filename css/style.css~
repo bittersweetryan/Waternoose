@@ -1,11 +1,12 @@
 body { background: #f2f2f2; color: #85A0A6; }
 .header { height: 100px; background-color: #592A25; }
-.header .searchContainer { position: relative; text-align: right; padding-top: 14px; margin-top: 10px; background-color: #8C3027; }
+.header .searchContainer { position: relative; text-align: right; padding: 6px; margin-top: 10px; background-color: #8C3027; }
 .header .search {  }
-.header .login { text-align: left; }
+.header .login { text-align: left; position: relative;}
 .header .login input { width: 120px; }
+#login { float: right; margin: 4px 34px 0px 0px;}
 
-.leftMenu { background-color: #8C3027; margin: 0px 0px 0px 10px; padding-bottom: 21px; height: 100%; }
+.leftMenu { margin: 0px 0px 0px 10px; padding-bottom: 21px; height: 100%; }
 #accordion { height: 300px; }
 #accordion ul { padding: 0px; margin: 0px; list-style: none; }
 
@@ -19,7 +20,9 @@ body { background: #f2f2f2; color: #85A0A6; }
 
 
 .heading {
-  background: url("../images/ui-bg_glass_20_8c3027_1x400.png") repeat-x scroll 50% 50% #8C3027;
+  background: url("../images/ui-bg_inset-soft_30_592a25_1x100.png") repeat-x scroll 50% 50% #8C3027;
+  font-family: Segoe UI,Arial,sans-serif;
+  border: 1px solid #666666;
   color: #FFFFFF;
   font-weight: bold;
   height: 40px;
@@ -27,3 +30,11 @@ body { background: #f2f2f2; color: #85A0A6; }
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.heading div {  margin: 8px 0px;  padding: 0px; background: transparent;  }
+
+input { -moz-border-radius: 3px; -moz-background-clip:padding!important; }
+label { padding-right: 5px; }
+h1.logo { font-family: 'Rock Salt', arial, serif;  font-size: 48px; margin-top: 0;}
+div.ui-accordion-content a {  font-size: 16px; }
+a:hover { color: #85A0A6;  }
+
