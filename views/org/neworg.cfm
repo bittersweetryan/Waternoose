@@ -1,15 +1,11 @@
 <form>
 <ul>
-<li><label for="prefixname">Prefix</label> 
-<input type="text"  name="prefixname"></li>
-<li><label for="firstname">First Name</label>
-<input type="text" name="firstname"></li>
-<li><label for="middlename">Middle Name</label>
-<input type="text" name="middlename"></li>
-<li><label for="lastname">Last Name</label>
-<input type="text" name="lastname"></li>
-<li><label for="suffixname">Suffix</label>
-<input type="text" name="suffixname"></li>
+<li><label for="longname">Long Name</label> 
+<input type="text"  name="longname"></li>
+<li><label for="shortname">Short Name</label> 
+<input type="text"  name="shortname"></li>
+<li><label for="contact">Short Name</label> 
+<input type="text"  name="shortname"></li>
 <li><label for="address1">Address 1</label>
 <input type="text" name="address1"></li>
 <li><label for="address2">Address 2</label>
@@ -30,9 +26,5 @@
 <input type="text" name="phone2"></li>
 <li><label for="email">Email</label>
 <input type="text" name="email"></li>
-<li><label for="username">Username</label>
-<input type="text" name="username"></li>
-<li><label for="password">Password</label>
-<input type="text" name="password"></li>
 </ul>
 </form>
