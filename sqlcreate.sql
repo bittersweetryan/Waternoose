@@ -65,3 +65,6 @@ CREATE TABLE `person` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
 
+--rsa add autoid to opportunity
+ALTER TABLE `waternoose`.`opportunities` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT  ;
+
