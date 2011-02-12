@@ -6,10 +6,40 @@
   <link href='./css/960.css' rel='stylesheet' type='text/css' />
   <link href='./css/jquery-ui-1.8.9.custom.css' rel='stylesheet' type='text/css' />
   <link href='./css/style.css' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css' />
   <script type='text/javascript' src='./js/jquery-1.5.min.js'></script>
+  <script type='text/javascript' src='./js/jquery.validate.min.js'></script>
   <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
 <script type='text/javascript'>
   jQuery(document).ready(function(){
+      var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#searchFor" ).autocomplete({
+			source: availableTags
+		});
+
       $( "#accordion" ).accordion({
           autoHeight: false
       });
@@ -22,41 +52,52 @@
   <div class='container_16' style='background-color: #592A25;'>
     <div class='header grid_16'>
       <div class='alpha grid_4 logo'>
-        main logo here
+        <h1 class='logo'>Waternoose</h1>
       </div>
       <div class='grid_3'> &nbsp;</div>
       <div class='grid_8 searchContainer ui-corner-all'>
         <div class='alpha grid_4 search'>
-          Search: <input name='searchFor' />
+          <label for='searchFor'>Search:</label> <input id='searchFor' />
         </div>
         <div class='omega grid_4 login'>
-          Username: <input name='username' /><br />
-          Password: <input name='password' /><br />
-          Login
-          Create Account
+          <label for='username'>Username:</label><input id='username' /><br />
+          <label for='password'>Password:</label><input id='password' /><br />
+          <button id="login" class="ui-widget ui-state-default ui-corner-all ui-button-text-only">
+            <span class="ui-button-text">Login</span>
+          </button>
         </div>
       </div>
       <div class='grid_1 alpha'> &nbsp;</div>
     </div>
     <div class='alpha grid_4 leftMenu'>
       <div id="accordion">
-        <h3><a href="#">Organizations</a></h3>
-        <div>
-          <ul>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
-          </ul>
-        </div>
         <h3><a href="#">Volunteers</a></h3>
         <div>
            <ul>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>My Account</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>My Opportunities</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>List Opportunities</a></li>
           </ul>
         </div>
-        <h3><a href="#">Section 3</a></h3>
+        <h3><a href="#">Organizations</a></h3>
+        <div>
+          <ul>
+            <li><a href='index.cfm?action=opportunity.add'>Add Opportunity</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>Volunteering</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>Opportunities</a></li>
+            <li><a href='index.cfm?action=opportunity.list'>Link</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">View Opportunities</a></h3>
+        <div>
+          <ul>
+            <li><a href='#'>By Category</a></li>
+            <li><a href='#'>By Date</a></li>
+            <li><a href='#'>By Something Cool</a></li>
+          </ul>
+        </div>
+        <h3><a href="#">Blah</a></h3>
         <div>
           <ul>
             <li><a href='#'>Link</a></li>
@@ -64,18 +105,11 @@
             <li><a href='#'>Link</a></li>
           </ul>
         </div>
-        <h3><a href="#">Section 4</a></h3>
-        <div>
-          <ul>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
-            <li><a href='#'>Link</a></li>
-          </ul>
-        </div>
+        
       </div>
       <br class='clear' />
       <div class='wordCloud'>
-        <div style='margin-top: -30px; margin-bottom: 30px; font-size: 18px; font-weight: bold; color: black;'>Popular Opportunities</div>
+        <div class='heading'><div>Popular Opportunities</div></div>
         <h1>Lorem</h1>
         <h4>ipsum</h4>
         <h2>dolor</h2>
@@ -98,7 +132,9 @@
     
     
     <h3 class='heading ui-corner-top' >
-      Organizations
+      <div>
+        Organizations
+      </div>
     </h3>
     <div>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
