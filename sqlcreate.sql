@@ -68,3 +68,11 @@ CREATE TABLE `person` (
 --rsa add autoid to opportunity
 ALTER TABLE `waternoose`.`opportunities` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT  ;
 
+delimiter $$
+
+CREATE TABLE `volunteer` (
+  `opportunity` int(11) NOT NULL,
+  `person` int(11) NOT NULL,
+  `status` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1$$
+
