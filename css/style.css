@@ -1,10 +1,14 @@
-body { background: #f2f2f2; }
-.header { height: 100px; border: 1px solid black; }
-.header .searchContainer { position: relative; text-align: right; padding-top: 14px;}
+body { background: #f2f2f2; color: #85A0A6; }
+.header { height: 100px; background-color: #592A25; }
+.header .searchContainer { position: relative; text-align: right; padding-top: 14px; margin-top: 10px; background-color: #8C3027; }
 .header .search {  }
-.header .login {  }
+.header .login { text-align: left; }
+.header .login input { width: 120px; }
+.leftMenu { margin: 0px 0px 0px 10px; border: 1px solid black; height: 100%; }
+.wordCloud { margin-top: 20px;  }
+.wordCloud h1,.wordCloud h2,.wordCloud h3,.wordCloud h4,.wordCloud h5 { margin: 0px; width: auto; float: left; }
 
-.leftMenu { margin: 0px 0px 0px 10px; border: 1px solid black; }
-.contentPane { margin: 0px; padding: 10px; border: 1px solid black; }
+.contentPane { margin: 0px; padding: 10px; border: 1px solid black; height: 100%; }
 
+.footer { height: 40px; border: 1px solid black; text-align: center; }
 .clear { clear: both; }

@@ -10,7 +10,9 @@
   <script type='text/javascript' src='./js/jquery-ui-1.8.9.custom.min.js'></script>
 <script type='text/javascript'>
   jQuery(document).ready(function(){
-    $( "#accordion" ).accordion();
+      $( "#accordion" ).accordion({
+          autoHeight: false
+      });
   });
 </script>
   
@@ -22,8 +24,9 @@
       <div class='alpha grid_4 logo'>
         main logo here
       </div>
-      <div class='grid_12 omega searchContainer'>
-        <div class='alpha grid_5 prefix_2 search'>
+      <div class='grid_3'> &nbsp;</div>
+      <div class='grid_8 searchContainer'>
+        <div class='alpha grid_4 search'>
           Search: <input name='searchFor' />
         </div>
         <div class='omega grid_4 login'>
@@ -33,44 +36,60 @@
           Create Account
         </div>
       </div>
+      <div class='grid_1 alpha'> &nbsp;</div>
     </div>
     <div class='alpha grid_4 leftMenu'>
       <div id="accordion">
-	<h3><a href="#">Section 1</a></h3>
-	<div>
-    123412341
-	</div>
-	<h3><a href="#">Section 2</a></h3>
-	<div>
-		 asd fasdf asd fasd
-	</div>
-	<h3><a href="#">Section 3</a></h3>
-	<div>
-		awae3 afe f3 3fa 3f
-		<ul>
-			<li>List item one</li>
-			<li>List item two</li>
-			<li>List item three</li>
-		</ul>
-	</div>
-	<h3><a href="#">Section 4</a></h3>
-	<div>
-		<p>
-		Cadsfadsf
-		</p>
-		<p>
-		asdfadsfasdfadsfasdf
-		</p>
-	</div>
-</div>
-
+        <h3><a href="#">Section 1</a></h3>
+        <div>
+          123412341
+        </div>
+        <h3><a href="#">Section 2</a></h3>
+        <div>
+           asd fasdf asd fasd
+        </div>
+        <h3><a href="#">Section 3</a></h3>
+        <div>
+          awae3 afe f3 3fa 3f
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3><a href="#">Section 4</a></h3>
+        <div>
+          <p>
+          Cadsfadsf
+          </p>
+          <p>
+          asdfadsfasdfadsfasdf
+          </p>
+        </div>
+      </div>
+      <br class='clear' />
       <div class='wordCloud'>
-        Word Cloud
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
+        <h1>Lorem</h1>
+        <h4>ipsum</h4>
+        <h2>dolor</h2>
+        <h4>sit</h4>
+        <h4>amet</h4>
+        <h3>consectetuer</h3>
+        <h5>adipiscing</h5>
       </div>
     </div>
     <div id='main' class='grid_12 omega contentPane'>Content Pane</div>
     <br class='clear' />
+    <div class='footer grid_16'>footer</div>
   </div>
+  
 </body>
 
 
