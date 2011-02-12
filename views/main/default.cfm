@@ -5,7 +5,7 @@
 	<ul>
 	<cfloop from="1" to="3" index="i">
 	
-	<li><a href="index.cfm?action=listing.view&listingId=i">#rc.opportunities[i].getlongname()#</a></li>
+	<li><a href="index.cfm?action=listing.view&listingId=i">Item 1</a></li>
 
 	</cfloop>
 		</cfoutput>
