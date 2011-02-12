@@ -1,9 +1,16 @@
-﻿<div id="newListings" class="">
+?<div id="newListings" class="">
+<cfdump var="#rc#">
+<cfoutput>
+
 	<p>New Listings</p>
 	<ul>
-		<li><a href="index.cfm?action=listing.view&listingId=1">Listing 1</a></li>
-		<li><a href="index.cfm?action=listing.view&listingId=1">Listing 2</a></li>
-		<li><a href="index.cfm?action=listing.view&listingId=1">Listing 3</a></li>
+	<cfloop from="1" to="1" index="i">
+	
+	<li><a href="index.cfm?action=listing.view&listingId=i">#rc.opportunities[i].getlongname()#</a></li>
+
+	</cfloop>
+		</cfoutput>
+		
 	</ul>
 </div>
 <div id="hotVolunteers" class="">
