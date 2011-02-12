@@ -1,10 +1,9 @@
-?<div id="newListings" class="">
-<cfdump var="#rc#">
+<div id="newListings" class="">
 <cfoutput>
 
 	<p>New Listings</p>
 	<ul>
-	<cfloop from="1" to="1" index="i">
+	<cfloop from="1" to="3" index="i">
 	
 	<li><a href="index.cfm?action=listing.view&listingId=i">#rc.opportunities[i].getlongname()#</a></li>
 
